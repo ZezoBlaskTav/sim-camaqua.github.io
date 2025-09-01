@@ -1,0 +1,35 @@
+/* Estilo personalizado para usar a fonte Inter */
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* Efeito de transição suave para o popup */
+#popup-overlay {
+    transition: opacity 0.3s ease-in-out;
+}
+#popup-box {
+    transition: transform 0.3s ease-in-out;
+}
+/* Animação para o aparecimento do popup */
+.popup-enter {
+    opacity: 0;
+}
+.popup-enter #popup-box {
+    transform: scale(0.95) translateY(10px);
+}
+/* Estilo para botões desabilitados */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: scale(1);
+}
+/* Estilizando o input do nome do estabelecimento para parecer um título */
+#establishment-name {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+#establishment-name:focus {
+    outline: none;
+    border-bottom: 2px solid #3b82f6; /* Borda azul ao focar */
+}
